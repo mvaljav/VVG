@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Web aplikacije kolegij - Vjezba 12  Forme 2. dio </title> <!-- Zaglavlje -->
+		<meta name = "author" content = "Marko Valjavec"> <!-- Meta podatak -->
+		<link rel="icon" type="image/x-icon" href="icon.ico">
+	</head>
+
+	<body>
+		<form action="adduser.php" method="post">
+			<label for="name"> First Name *</label><br>
+			<input type="text" id="name" name="name" placeholder="Your first name..."><br>
+			<label for="lastname"> Last Name * </label><br>
+			<input type="text" id="lastname" name="lastname" placeholder="Your last name..."><br>
+			<label for="email"> Your E-mail *: </label><br>
+			<input type="text" id="email" name="email" placeholder="Your e-mail..."><br>
+			
+			<label for="country"> Country *</label><br>
+			<select id="country" name = "country">
+				<option value ="" > Please select </option>
+				<option value ="SLO" > Slovenia </option>
+				<option value ="HR" selected > Hrvatska </option>
+				<option value ="BIH" > Bosna i Hercegovina </option>
+				<option value ="SRB" > Srbija </option>
+			</select><br>			
+			
+			<label for="name"> Message </label><br>
+			<input type="text" id="message" name="message" placeholder="Write something..."><br>
+			<input type="submit" value="Send">
+			<input type="reset" value="Cancel">
+			</form>
+			
+			
+	</body>
+
+	<footer>
+	
+			&copy; Marko Valjavec
+			<a href="https://mvaljav.github.io/VVG/" target ="_blank" >Github</a> &amp; Markov projekt. All rights reserved.
+			
+	</footer>
+</html>
