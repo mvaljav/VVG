@@ -9,56 +9,100 @@
 	<link rel="stylesheet" href="style.css">
     <title>Mindblowing Box</title>
     <style>
+	
 		* {
-		margin 0;
-		padding 0:
-		}
-        body {
-            background-color: black;
-            color: white;
-			}
-		header {
-            position: relative;
-            overflow: hidden;
-			text-align: center;
-        }
-        video {
-            width: 70%; 
-            height: auto; 
-        }
-		nav {
-            position: absolute; 
-            top: 20px; 
-            left: 50%; 
-            transform: translateX(-50%); 
-            backdrop-filter: blur(5px); 
-            padding: 10px 20px; 
-            border-radius: 5px; 
-            z-index: 10;
-        }
-        nav a {
-			font-size: 30px;
-            color: white;
-            margin: 0 15px; 
-            text-decoration: none; 
-        }
-		h1	{
-			text-align: center;
-			font-size: 35px;
-			}
-		h2
-			{
-			margin-left: 20%;
-			margin-right: 20%;
-			text-align: center;
-			font-size: 30px;
-			}
-		p 	{
-			align: justify;
-			margin-left: 20%;
-			margin-right: 20%;
-			font-size: 20px;
-			}
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    background: url('slike/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+main {
+    max-width: 800px;
+    width: 100%; 
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+video {
+    width: 800px;
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+nav a {
+    font-size: 30px;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: darkgrey;
+}
+
+nav a:visited {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p {
+padding-top: 10px;
+	padding-bottom: 10px;
+    text-indent: 30px;
+    font-size: 20px;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-radius: 15px; 
+    padding: 20px 50px; 
+    margin: 20px 0; 
+    width: 100%;
+    max-width: 750px; 
+    box-sizing: border-box; 
+}
     </style>
 </head>
 <body>
@@ -71,10 +115,11 @@
             <source src="video/rotacija.mp4" type="video/mp4">
             Video not supported.
         </video>
+		<h1>Mindblowing Box</h1>
 		<nav>
             <a href="#link1">Home</a>
             <a href="#link2">Product</a>
-			<a href="#link3">Galery</a>
+			<a href="#link3">Gallery</a>
             <a href="#link4">About Us</a>
             <a href="#link5">Contact</a>
 			
@@ -83,26 +128,26 @@
 	<main>
 		
         <section id="link2">
-			<h1>Mindblowing Box</h1>
+			
             <h2>Electronic based bomb defusal game</h2>
-            <p>Mind Blowing Box is an award-winning cooperative electronic game simulating* bomb defusal, for two or more people. One player, the operator, is tasked with defusing the bomb. The other player (or players), known as the instructor, can’t see the bomb, but has the manual explaining exactly how to defuse it. The instructor’s job is to tell the operator how to defuse the bomb before it explodes.</p>
+            <p align="justify" >Mind Blowing Box is an award-winning cooperative electronic game simulating* bomb defusal, for two or more people. One player, the operator, is tasked with defusing the bomb. The other player (or players), known as the instructor, can’t see the bomb, but has the manual explaining exactly how to defuse it. The instructor’s job is to tell the operator how to defuse the bomb before it explodes.</p>
         
-			<h2>About game</h2>
-<p>Mind Blowing Box is an award-winning cooperative electronic game simulating* bomb defusal, for two or more people. One player, the operator, is tasked with defusing the bomb. The other player (or players), known as the instructor, can’t see the bomb, but has the manual explaining exactly how to defuse it. The instructor’s job is to tell the operator how to defuse the bomb before it explodes. Sounds simple, right?
+			
+<p align="justify">Sounds simple, right? <br>
 
-*Not necessarily a realistic simulation, mind you.
+*Not necessarily a realistic simulation, mind you.</p>
 
-In fact, it’s not simple at all! The bomb has multiple modules, each of which has to be disabled in a specific way that varies with each new game. The operator has to describe what a module looks like and what state it’s in for the instructor to be able to find it in the manual and explain what to do. All the while, the bomb’s timer counts down and increases the tension with every beep!
+<p align="justify">In fact, it’s not simple at all! The bomb has multiple modules, each of which has to be disabled in a specific way that varies with each new game. The operator has to describe what a module looks like and what state it’s in for the instructor to be able to find it in the manual and explain what to do. All the while, the bomb’s timer counts down and increases the tension with every beep!</p>
 
-To succeed, players need to communicate effectively and quickly, without making too many mistakes. If they do make a mistake, the timer will skip a certain amount of time, forcing the players to work even faster! Or, if you really want a challenge, the bomb can be set to explode* as soon as the first mistake is made. To make the challenge even bigger, there are modules that periodically interrupt the operator and demand attention while the players are working on disabling a particular module. If these interrupting modules aren’t attended to in time, you know what happens!
+<p align="justify">To succeed, players need to communicate effectively and quickly, without making too many mistakes. If they do make a mistake, the timer will skip a certain amount of time, forcing the players to work even faster! Or, if you really want a challenge, the bomb can be set to explode* as soon as the first mistake is made. To make the challenge even bigger, there are modules that periodically interrupt the operator and demand attention while the players are working on disabling a particular module. If these interrupting modules aren’t attended to in time, you know what happens!</p>
 
-*Well, not really explode.
+<p align="justify">*Well, not really explode.</p>
 
-Modules come in different types, and they’re all physically interchangeable. They present different challenges, such as memorization, repeating a sequence, solving an invisible maze, decoding a signal, cutting or disconnecting wires, etc. With different difficulty settings, adjustable timer length, harder and/or more modules, varying module challenges, and adjustable margin for error, Mind Blowing Box has huge replay value!
+<p align="justify">Modules come in different types, and they’re all physically interchangeable. They present different challenges, such as memorization, repeating a sequence, solving an invisible maze, decoding a signal, cutting or disconnecting wires, etc. With different difficulty settings, adjustable timer length, harder and/or more modules, varying module challenges, and adjustable margin for error, Mind Blowing Box has huge replay value!</p>
 
-Additionally, with its modular design, Mind Blowing Box allows you to use custom modules. If you’re the DIY type, we provide you with templates that include schematics, PCB designs and part of source code to make your own modules and present unique challenges to your friends!
+<p align="justify">Additionally, with its modular design, Mind Blowing Box allows you to use custom modules. If you’re the DIY type, we provide you with templates that include schematics, PCB designs and part of source code to make your own modules and present unique challenges to your friends!</p>
 
-Features:
+<p align="justify">Features:
 
 Cooperative play for two or more people.
 Adjustable number of modules.
@@ -126,16 +171,16 @@ Invisible maze, Wrong sequence, 4 digit memory, Wire cutting, Morse code, Safe, 
 		
 		</section>
         <section id="link3">
-            <h1>Section 3</h1>
-            <p>This is the content for Link 3.</p>
+            <h1>Gallery</h1>
+            <p> "Ubaciti slike" 3x3 grid npr.</p>
         </section>
         <section id="link4">
-            <h1>Section 4</h1>
-            <p>This is the content for Link 4.</p>
+            <h1>About</h1>
+            <p>Neki opis firmice i google lokacija npr.</p>
         </section>
 		<section id="link5">
-            <h1>Section 4</h1>
-            <p>This is the content for Link 5.</p>
+            <h1>Contact form</h1>
+            <p>Ništa previše ime i prezime, kontakt, zašto, padadadada</p>
         </section>
 	</main>
 </body>
