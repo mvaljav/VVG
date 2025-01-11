@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mindblowing Box electronic boardgame">
+    <meta name="keywords" content="diy, ktane, bomb, electronic, boardgame, game, coop">
+    <meta name="author" content="Marko Valjavec">
+	<link rel="stylesheet" href="style.css">
+    <title>Mindblowing Box</title>
+    <style>
+	
+		* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    background: url('slike/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+main {
+    max-width: 800px;
+    width: 100%; 
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+video {
+    width: 800px;
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+nav a {
+    font-size: 30px;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: darkgrey;
+}
+
+nav a:visited {
+    color: red;
+}
+
+h1 {
+    text-align: left;
+    font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p {
+padding-top: 10px;
+	padding-bottom: 10px;
+    text-indent: 30px;
+    font-size: 20px;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-radius: 15px; 
+    padding: 20px 50px; 
+    margin: 20px 0; 
+    width: 100%;
+    max-width: 750px; 
+    box-sizing: border-box; 
+}
+
+		.article img {
+            max-width: 145px;
+            height: auto;
+            display: block;
+            margin: 9px auto;
+					}
+
+        .article-content h2 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .article-content h2 a:hover {
+            text-decoration: none;
+        }
+		
+		
+        .figure-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        figure {
+            margin: 0;
+            width: 48%; /* Adjust width as needed */
+        }
+        td {
+            text-align: left; /* Align text to the left in all table cells */
+        }
+		table
+			{margin-top: 10px;
+			margin-bottom: 10px;
+			}
+			
+form {
+text-align: left;
+font-size: 25px;
+}
+    </style>
+</head>
+<body>
+	<header>
+
+        <video autoplay muted loop>
+		
+            <source src="video/rotacija.mp4" type="video/mp4">
+            Video not supported.
+        </video>
+		<h1>Mindblowing Box</h1>
+		<nav>
+            <a href="#link1">Home</a>
+            <a href="#link2">News</a>
+			<a href="#link3">Contact</a>
+            <a href="#link4">About Us</a>
+            <a href="#link5">Gallery</a>
+			
+        </nav>
+    </header>
+	
+	<main>
+		
+        <section id="link1">
+			
+            <h2>Electronic based bomb defusal game</h2>
+            <p align="justify" >Mind Blowing Box is an award-winning cooperative electronic game simulating* bomb defusal, for two or more people. One player, the operator, is tasked with defusing the bomb. The other player (or players), known as the instructor, can’t see the bomb, but has the manual explaining exactly how to defuse it. The instructor’s job is to tell the operator how to defuse the bomb before it explodes.</p>
+        
+		    <figure align="center">
+			
+				<img src="slike/slika1.jpg" alt="Finished prototype" width="210%" >
+				<figcaption>Finished prototype</figcaption>
+				
+			</figure>
+			
+<p align="justify">Sounds simple, right? <br>
+
+*Not necessarily a realistic simulation, mind you.</p>
+
+<p align="justify">In fact, it’s not simple at all! The bomb has multiple modules, each of which has to be disabled in a specific way that varies with each new game. The operator has to describe what a module looks like and what state it’s in for the instructor to be able to find it in the manual and explain what to do. All the while, the bomb’s timer counts down and increases the tension with every beep!</p>
+
+<p align="justify">To succeed, players need to communicate effectively and quickly, without making too many mistakes. If they do make a mistake, the timer will skip a certain amount of time, forcing the players to work even faster! Or, if you really want a challenge, the bomb can be set to explode* as soon as the first mistake is made. To make the challenge even bigger, there are modules that periodically interrupt the operator and demand attention while the players are working on disabling a particular module. If these interrupting modules aren’t attended to in time, you know what happens!</p>
+
+<p align="justify">*Well, not really explode.</p>
+
+
+
+<p align="justify">Modules come in different types, and they’re all physically interchangeable. They present different challenges, such as memorization, repeating a sequence, solving an invisible maze, decoding a signal, cutting or disconnecting wires, etc. With different difficulty settings, adjustable timer length, harder and/or more modules, varying module challenges, and adjustable margin for error, Mind Blowing Box has huge replay value!</p>
+
+
+
+<p align="justify">Additionally, with its modular design, Mind Blowing Box allows you to use custom modules. If you’re the DIY type, we provide you with templates that include schematics, PCB designs and part of source code to make your own modules and present unique challenges to your friends!</p>
+
+<p align="justify">Features:
+
+Cooperative play for two or more people.
+Adjustable number of modules.
+Interchangeable modules mean you can use the modules you want, even multiple modules of the same type.
+Different difficulty settings available.
+Theoretically possible to connect over 100 modules (if you have that many, that is).
+Designed for board gamers and video gamers, escape rooms, electronic hobbyists and everyone wanting to test their puzzle-solving and communication skills.
+Appropriate for ages 11 and up.
+Templates for making your own modules (schematics, PCB designs and source code)
+Kit Editions only:
+
+DIY (Do It Yourself)
+
+anyone with basic soldering skills and a few basic tools can assemble Mind Blowing Box.
+Learn about Arduino®, STEM, integrated circuits, LEDs, resistors, potentiometers, capacitors, segment displays, LCDs, and much more.
+The types of puzzle modules currently available:
+
+Invisible maze, Wrong sequence, 4 digit memory, Wire cutting, Morse code, Safe, 4 Signs, Bomb code, 30 sec push, Question and many more.
+
+</p>
+
+</section>
+		<section id="link2">
+		<h1> NEWS </h1>
+		<table>
+		
+			<tr>
+				<td rowspan="3" width="20%">
+						<article class="article">
+						<a href="clanak1.html"><img src="slike/slika6.jpg"></a>
+				</td>
+				 <td>   <h3><a href="clanak1.html">Sferakon 2017.</a></h3></td>
+				
+			</tr>
+			<tr>
+            <div class="article-content">
+            <td   <p>MBB na Sferakonu...  <a href="clanak1.html">Read more</a></p></td> </td>
+			</tr>
+			
+             <td>   <time datetime="2017-13-05"> 13th May 2017.  </time></td>
+
+			 </tr>
+			 
+			 
+            </div>
+        </article>
+		</table>
+
+				<table>
+		
+			<tr>
+				<td rowspan="3" width="20%">
+						<article class="article">
+						<a href="clanak2.html"><img src="slike/slika7.jpg"></a>
+				</td>
+				 <td>   <h3><a href="clanak2.html">Prototype</a></h3></td>
+				
+			</tr>
+			<tr>
+            <div class="article-content">
+            <td   <p>O prototipu...  <a href="clanak2.html">Read more</a></p></td> </td>
+			</tr>
+			
+             <td>   <time datetime="2017-15-05"> 15th May 2017.  </time></td>
+
+			 </tr>
+			 
+			 
+            </div>
+        </article>
+		</table>
+		
+				<table>
+		
+			<tr>
+				<td rowspan="3" width="20%">
+						<article class="article">
+						<a href="clanak3.html"><img src="slike/slika8.jpg"></a>
+				</td>
+				 <td>   <h3><a href="clanak3.html">Manufacturing</a></h3></td>
+				
+			</tr>
+			<tr>
+            <div class="article-content">
+            <td   <p>Manufacturing the in full...  <a href="clanak3.html">Read more</a></p></td> </td>
+			</tr>
+			
+             <td>   <time datetime="2017-29-05"> 29th May 2017.  </time></td>
+
+			 </tr>
+			 
+			 
+            </div>
+        </article>
+		</table>
+		
+				<table>
+		
+			<tr>
+				<td rowspan="3" width="20%">
+						<article class="article">
+						<a href="clanak4.html"><img src="slike/slika9.jpg"></a>
+				</td>
+				 <td>   <h3><a href="clanak4.html">Product is finished.</a></h3></td>
+				
+			</tr>
+			<tr>
+            <div class="article-content">
+            <td   <p>Game is finished and ready for dispatch...  <a href="clanak4.html">Read more</a></p></td> </td>
+			</tr>
+			
+             <td>   <time datetime="2017-10-06"> 10th June 2017.  </time></td>
+
+			 </tr>
+			 
+			 
+            </div>
+        </article>
+		</table>
+		
+				<table>
+		
+			<tr>
+				<td rowspan="3" width="20%">
+						<article class="article">
+						<a href="clanak5.html"><img src="slike/slika10.jpg"></a>
+				</td>
+				 <td>   <h3><a href="clanak5.html">Dispatching.</a></h3></td>
+				
+			</tr>
+			<tr>
+            <div class="article-content">
+            <td   <p>Dispaching of product started, first locations are...  <a href="clanak5.html">Read more</a></p></td> </td>
+			</tr>
+			
+             <td>   <time datetime="2017-16-06"> 18th June 2017.  </time></td>
+
+			 </tr>
+			 
+			 
+            </div>
+        </article>
+		</table>
+        </section>
+
+        <section id="link4">
+            <h1>About us</h1>
+            <p align="justify" >Mindbox Development j.d.o.o. is a small start-up company that is making electronic digital games and products. Currently, we are working od Mind-Blowing Box which is our primary product.</p>
+        </section>
+		<section id="link3">
+            <h1>Contact form</h1>
+         
+    <br>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89205.01935244899!2d16.253524641604642!3d45.6777885929953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47665fbddc1d410b%3A0x400ad50862bb640!2sIvani%C4%87-Grad!5e0!3m2!1sen!2shr!4v1736601255932!5m2!1sen!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	<br>
+	
+	
+	
+    <form  action="#" method="post" onsubmit="return validateForm()">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="country">Country:</label><br>
+		
+        <select id="country" name="country" required><br>
+            <option value="" disabled selected>Select your country</option>
+            <option value="cro">Croatia</option>
+            <option value="slo">Slovenia</option>
+            <option value="uk">United Kingdom</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="ger">Germany</option>
+            <option value="hu">Hungaria</option>
+            <option value="au">Austria</option>
+            <option value="it">Italy</option>
+        </select>
+<br>
+        <button type="submit">Submit</button>
+    </form>
+        </section>
+		
+				</section>
+        <section id="link5">
+            <h1>Gallery</h1>
+			
+			<div class="figure-container">
+						<figure>
+				<a href="slike/slika2.jpg"><img src="slike/slika2.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Sferakon 2017.</figcaption>
+						</figure>
+						
+						<figure>
+				<a href="slike/slika3.jpg"><img src="slike/slika3.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Sferakon playing</figcaption>
+			</figure>
+			</div>
+						
+			<div class="figure-container">
+						<figure>
+				<a href="slike/slika4.jpg"><img src="slike/slika4.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>BGD 2017.</figcaption>
+						</figure>
+						
+						<figure>
+				<a href="slike/slika5.jpg"><img src="slike/slika5.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>BGD playing</figcaption>
+			</figure>
+			</div>
+			<div class="figure-container">
+						<figure>
+				<a href="slike/slika1.jpg"><img src="slike/slika1.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>MBB.</figcaption>
+						</figure>
+						
+						<figure>
+				<a href="slike/slika9.jpg"><img src="slike/slika9.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Timer</figcaption>
+			</figure>
+			</div>
+			
+						<div class="figure-container">
+						<figure>
+				<a href="slike/slika8.jpg"><img src="slike/slika8.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Manufacturing</figcaption>
+						</figure>
+						
+						<figure>
+				<a href="slike/slika11.jpg"><img src="slike/slika11.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Module Safe</figcaption>
+			</figure>
+			</div>
+			
+						<div class="figure-container">
+						<figure>
+				<a href="slike/slika12.jpg"><img src="slike/slika12.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Module Morse code</figcaption>
+						</figure>
+						
+						<figure>
+				<a href="slike/slika13.jpg"><img src="slike/slika13.jpg" alt="Nesto" width="100%" height="200px"></a>
+				<figcaption>Module Simon</figcaption>
+			</figure>
+			</div>
+
+
+        </section>
+
+	</main>
+	
+	<footer>
+	
+		<h3> SOCIAL MEDIA </h3>
+					<a href="https://www.facebook.com">
+				<img src="slike/facebook.png" alt="Icon" height="20px">
+			</a>
+					<a href="https://www.instagram.com">
+				<img src="slike/instagram.png" alt="Icon" height="20px">
+			</a>
+	
+		<p>Copyright &copy; 2025 MV VVG
+
+		
+			<a href="https://mvaljav.github.io/VVG/">
+				<img src="slike/github.png" alt="Icon" height="20px">
+			</a>
+		</p>
+
+
+	</footer>
+</body>
