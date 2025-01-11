@@ -43,7 +43,7 @@ header {
 }
 
 video {
-    width: 100%;
+    width: 800px;
     height: auto;
 }
 
@@ -76,20 +76,20 @@ nav a:visited {
 h1 {
     text-align: left;
     font-size: 35px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 h2 {
     text-align: left;
     font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 p {
-    padding-top: 10px;
-    padding-bottom: 10px;
+padding-top: 10px;
+	padding-bottom: 10px;
     text-indent: 30px;
     font-size: 20px;
 }
@@ -104,135 +104,42 @@ section {
     box-sizing: border-box; 
 }
 
-.article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 9px auto;
-}
+		.article img {
+            max-width: 145px;
+            height: auto;
+            display: block;
+            margin: 9px auto;
+					}
 
-.article-content h2 a {
-    color: #fff;
-    text-decoration: none;
-}
+        .article-content h2 a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-.article-content h2 a:hover {
-    text-decoration: none;
-}
-
-.figure-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-figure {
-    margin: 0;
-    width: 48%; /* Adjust width for flexibility */
-    margin-bottom: 15px;
-}
-
-td {
-    text-align: left;
-}
-
-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
+        .article-content h2 a:hover {
+            text-decoration: none;
+        }
+		
+		
+        .figure-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        figure {
+            margin: 0;
+            width: 48%; /* Adjust width as needed */
+        }
+        td {
+            text-align: left; /* Align text to the left in all table cells */
+        }
+		table
+			{margin-top: 10px;
+			margin-bottom: 10px;
+			}
+			
 form {
-    text-align: left;
-    font-size: 25px;
-}
-
-/* Media Queries for responsive design */
-
-@media (max-width: 1200px) {
-    nav a {
-        font-size: 26px;
-    }
-
-    h1, h2 {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    header {
-        text-align: center;
-    }
-
-    video {
-        width: 100%;
-    }
-
-    nav {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        backdrop-filter: blur(5px);
-    }
-
-    nav a {
-        font-size: 24px;
-        display: inline-block;
-        margin: 10px 0;
-    }
-
-    .figure-container {
-        flex-direction: column;
-    }
-
-    figure {
-        width: 100%;
-    }
-
-    .article img {
-        max-width: 100%;
-    }
-
-    form {
-        font-size: 20px;
-    }
-
-    footer {
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    h1, h2 {
-        font-size: 24px;
-    }
-
-    nav a {
-        font-size: 20px;
-    }
-
-    video {
-        width: 100%;
-    }
-
-    form input, select, button {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .figure-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    figure {
-        width: 100%;
-    }
+text-align: left;
+font-size: 25px;
 }
     </style>
 </head>
