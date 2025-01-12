@@ -38,7 +38,7 @@ main {
 
 header {
     position: relative;
-    overflow: hidden;
+   /* overflow: hidden;*/
     text-align: center;
 }
 
@@ -60,9 +60,9 @@ nav {
     border-radius: 5px;
     z-index: 10;
 	
-	display: flex; /* Flexbox layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller devices */
-    justify-content: center; /* Center the links */
+	display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 nav a {
@@ -142,7 +142,7 @@ section {
             width: 48%; /* Adjust width as needed */
         }
         td {
-            text-align: left; /* Align text to the left in all table cells */
+            text-align: left; 
         }
 		table
 			{margin-top: 10px;
@@ -156,12 +156,12 @@ font-size: 25px;
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center-align the links */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     nav a {
-        margin: 10px 0; /* Add vertical spacing */
+        margin: 10px 0; 
     }
 }
 
@@ -170,11 +170,7 @@ font-size: 25px;
 <body>
 	<header>
 
-        <video autoplay muted loop>
-		
-            <source src="video/rotacija.mp4" type="video/mp4">
-            Video not supported.
-        </video>
+      
 		
 		<nav>
             <a href="#link1">Home</a>
@@ -184,6 +180,13 @@ font-size: 25px;
             <a href="#link5">Gallery</a>
 			
         </nav>
+		
+		  <video autoplay muted loop>
+		
+            <source src="video/rotacija.mp4" type="video/mp4">
+            Video not supported.
+        </video>
+		
     </header>
 	
 	<main>
